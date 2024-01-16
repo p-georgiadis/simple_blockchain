@@ -56,7 +56,7 @@ public class Blockchain {
         return mined;
     }
 
-    public static boolean isMined(Block minedBlock) throws NoSuchAlgorithmException {
+    public static boolean isMined(Block minedBlock) {
         return minedBlock.getHash().startsWith("00");
     }
 }

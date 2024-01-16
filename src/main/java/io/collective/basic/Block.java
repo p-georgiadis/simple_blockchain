@@ -5,10 +5,10 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class Block {
-    private String previousHash;
-    private long timestamp;
-    private int nonce;
-    private String hash;
+    private final String previousHash;
+    private final long timestamp;
+    private final int nonce;
+    private final String hash;
 
     public Block(String previousHash, long timestamp, int nonce) throws NoSuchAlgorithmException {
         this.previousHash = previousHash;
